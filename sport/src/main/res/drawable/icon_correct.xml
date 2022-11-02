@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="35dp"
+    android:height="35dp"
+    android:tint="#FFFFFF"
+    android:viewportWidth="35.0"
+    android:viewportHeight="35.0">
+
+    <path
+        android:name="rect_vector"
+        android:pathData=" M 1 17 A 16 16 0 0 1 33 17M 1 17A16 16 0 0 0 33 17 M 12,9 L23, 24 M 12,24 L23,9M27,28 L35, 35  "
+        android:strokeWidth="3"
+        android:strokeColor="@android:color/white" />
+
+</vector>

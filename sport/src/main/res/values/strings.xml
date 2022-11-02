@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="java_entry_title" translatable="false">Run the ML Kit quickstart written in Java</string>
+    <string name="kotlin_entry_title" translatable="false">Run the ML Kit quickstart written in Kotlin</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="permission_camera_rationale" translatable="false">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission" translatable="false">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error" translatable="false">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="toggle_turn_on" translatable="false">Front</string>
+    <string name="toggle_turn_off" translatable="false">Back</string>
+    <string name="desc_camera_source_activity" translatable="false">Vision detectors demo with live camera preview</string>
+    <string name="desc_still_image_activity" translatable="false">Vision detectors demo with a still image</string>
+    <string name="desc_camerax_live_preview_activity" translatable="false">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
+    <string name="desc_cameraxsource_demo_activity" translatable="false">Object detection with custom classifier using ML Kit CameraXSource API. Note that CameraX is only supported on API 21+</string>
+    <string name="download_error" translatable="false">Download error</string>
+    <string name="start_over" translatable="false">Start over</string>
+    <string name="menu_item_settings" translatable="false">Settings</string>
+    <string name="select_image" translatable="false">Select image</string>
+    <string name="custom_object_detection" translatable="false">Custom Object Detector</string>
+
+    <!-- Settings related strings. -->
+    <string name="pref_screen" translatable="false">ps</string>
+    <string name="pref_screen_title_live_preview" translatable="false">Live preview settings</string>
+    <string name="pref_screen_title_still_image" translatable="false">Still image settings</string>
+    <string name="pref_screen_title_camerax_live_preview" translatable="false">CameraX live preview settings</string>
+    <string name="pref_screen_title_cameraxsource_demo" translatable="false">CameraXSource live preview settings</string>
+    <string name="pref_category_info" translatable="false">Detection Info</string>
+    <string name="pref_category_face_detection" translatable="false">Face Detection</string>
+    <string name="pref_category_object_detection" translatable="false">Object Detection / Custom Object Detection</string>
+    <string name="pref_category_automl" translatable="false">AutoML Image Labeling</string>
+    <string name="pref_category_pose_detection" translatable="false">Pose Detection</string>
+    <string name="pref_category_segmentation" translatable="false">Selfie Segmentation</string>
+    <string name="pref_category_text_recognition" translatable="false">Text Recognition</string>
+
+    <!-- Strings for camera settings. -->
+    <string name="pref_category_key_camera" translatable="false">pckc</string>
+    <string name="pref_category_title_camera" translatable="false">Camera</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_camerax_rear_camera_target_resolution" translatable="false">crctas</string>
+    <string name="pref_key_camerax_front_camera_target_resolution" translatable="false">cfctas</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_title_rear_camera_preview_size" translatable="false">Rear camera preview size</string>
+    <string name="pref_title_front_camera_preview_size" translatable="false">Front camera preview size</string>
+    <string name="pref_title_camerax_rear_camera_target_resolution" translatable="false">CameraX rear camera target resolution</string>
+    <string name="pref_title_camerax_front_camera_target_resolution" translatable="false">CameraX front camera target resolution</string>
+    <string name="pref_title_camera_live_viewport" translatable="false">Enable live viewport</string>
+    <string name="pref_summary_camera_live_viewport" translatable="false">Do not block camera preview drawing on detection</string>
+
+    <!-- Strings for info preference. -->
+    <string name="pref_title_info_hide" translatable="false">Hide detection info</string>
+    <string name="pref_key_info_hide" translatable="false">ih</string>
+
+    <!-- Strings for info preference. -->
+    <string name="pref_camera_info" translatable="false">Camera info</string>
+    <string name="pref_camera_info_frontorback" translatable="false">forb</string>
+
+    <!-- Strings for text recognition preference. -->
+    <string name="pref_title_group_recognized_text_in_blocks" translatable="false">Group recognized text in paragraphs</string>
+    <string name="pref_key_group_recognized_text_in_blocks" translatable="false">grtib</string>
+
+    <!-- Strings for object detector enable multiple objects preference. -->
+    <string name="pref_title_object_detector_enable_multiple_objects" translatable="false">Enable multiple objects</string>
+    <string name="pref_key_live_preview_object_detector_enable_multiple_objects" translatable="false">lpodemo</string>
+    <string name="pref_key_still_image_object_detector_enable_multiple_objects" translatable="false">siodemo</string>
+
+    <!-- Strings for object detector enable classification preference. -->
+    <string name="pref_title_object_detector_enable_classification" translatable="false">Enable classification</string>
+    <string name="pref_key_live_preview_object_detector_enable_classification" translatable="false">lpodec</string>
+    <string name="pref_key_still_image_object_detector_enable_classification" translatable="false">siodec</string>
+
+    <!-- Strings for face detector landmark mode preference. -->
+    <string name="pref_title_face_detector_landmark_mode" translatable="false">Landmark mode</string>
+    <string name="pref_key_live_preview_face_detection_landmark_mode" translatable="false">lpfdlm</string>
+    <string name="pref_entries_face_detector_landmark_mode_no_landmarks" translatable="false">No landmarks</string>
+    <string name="pref_entries_face_detector_landmark_mode_all_landmarks" translatable="false">All landmarks</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#LandmarkMode -->
+    <string name="pref_entry_values_face_detector_landmark_mode_no_landmarks" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_landmark_mode_all_landmarks" translatable="false">2</string>
+
+    <!-- Strings for face detector contour mode preference. -->
+    <string name="pref_title_face_detector_contour_mode" translatable="false">Contour mode</string>
+    <string name="pref_key_live_preview_face_detection_contour_mode" translatable="false">lpfdcm</string>
+    <string name="pref_entries_face_detector_contour_mode_no_contours" translatable="false">No contours</string>
+    <string name="pref_entries_face_detector_contour_mode_all_contours" translatable="false">All contours</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ContourMode -->
+    <string name="pref_entry_values_face_detector_contour_mode_no_contours" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_contour_mode_all_contours" translatable="false">2</string>
+
+    <!-- Strings for face detector classification mode preference. -->
+    <string name="pref_title_face_detector_classification_mode" translatable="false">Classification mode</string>
+    <string name="pref_key_live_preview_face_detection_classification_mode" translatable="false">lpfdcfm</string>
+    <string name="pref_entries_face_detector_classification_mode_no_classifications" translatable="false">No classifications</string>
+    <string name="pref_entries_face_detector_classification_mode_all_classifications" translatable="false">All classifications</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ClassificationMode -->
+    <string name="pref_entry_values_face_detector_classification_mode_no_classifications" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_classification_mode_all_classifications" translatable="false">2</string>
+
+    <!-- Strings for face detector performance mode preference. -->
+    <string name="pref_title_face_detector_performance_mode" translatable="false">Performance mode</string>
+    <string name="pref_key_live_preview_face_detection_performance_mode" translatable="false">lpfdpm</string>
+    <string name="pref_entries_face_detector_performance_mode_fast" translatable="false">Fast</string>
+    <string name="pref_entries_face_detector_performance_mode_accurate" translatable="false">Accurate</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#PerformanceMode -->
+    <string name="pref_entry_values_face_detector_performance_mode_fast" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_performance_mode_accurate" translatable="false">2</string>
+
+    <!-- Strings for face detector face tracking preference. -->
+    <string name="pref_title_face_detector_face_tracking" translatable="false">Face tracking</string>
+    <string name="pref_key_live_preview_face_detection_face_tracking" translatable="false">lpfdft</string>
+
+    <!-- Strings for face detector min face size preference. -->
+    <string name="pref_title_face_detector_min_face_size" translatable="false">Minimum face size</string>
+    <string name="pref_key_live_preview_face_detection_min_face_size" translatable="false">lpfdmfs</string>
+    <string name="pref_dialog_message_face_detector_min_face_size" translatable="false">Proportion of the head width to the image width, and the valid value range is [0.0, 1.0]</string>
+    <string name="pref_toast_invalid_min_face_size" translatable="false">Minimum face size must be a float value and in the range [0.0, 1.0]</string>
+
+    <!-- Strings for pose detector performance mode preference. -->
+    <string name="pref_title_pose_detector_performance_mode" translatable="false">Performance mode</string>
+    <string name="pref_key_live_preview_pose_detection_performance_mode" translatable="false">lppdpm</string>
+    <string name="pref_key_still_image_pose_detection_performance_mode" translatable="false">sipdpm</string>
+    <string name="pref_entries_pose_detector_performance_mode_fast" translatable="false">Fast</string>
+    <string name="pref_entries_pose_detector_performance_mode_accurate" translatable="false">Accurate</string>
+    <string name="pref_entry_values_pose_detector_performance_mode_fast" translatable="false">1</string>
+    <string name="pref_entry_values_pose_detector_performance_mode_accurate" translatable="false">2</string>
+
+    <!-- Strings for pose detector showInFrameLikelihood preference. -->
+    <string name="pref_title_pose_detector_show_in_frame_likelihood" translatable="false">Show in-frame likelihood</string>
+    <string name="pref_key_live_preview_pose_detector_show_in_frame_likelihood" translatable="false">lppdsifl</string>
+    <string name="pref_key_still_image_pose_detector_show_in_frame_likelihood" translatable="false">sipdsifl</string>
+
+    <!-- Strings for pose detector z value visualization preference. -->
+    <string name="pref_title_pose_detector_visualize_z" translatable="false">Visualize z value</string>
+    <string name="pref_key_pose_detector_visualize_z" translatable="false">pdvz</string>
+    <string name="pref_title_pose_detector_rescale_z" translatable="false">Rescale z value for visualization</string>
+    <string name="pref_key_pose_detector_rescale_z" translatable="false">pdrz</string>
+
+    <!-- Strings for pose classification preference. -->
+    <string name="pref_title_pose_detector_run_classification" translatable="false">Run Classification</string>
+    <string name="pref_key_pose_detector_run_classification" translatable="false">pdrc</string>
+    <string name="pref_summary_pose_detector_run_classification" translatable="false">Classify squat and pushup poses. Count reps in streaming mode. To get the best classification results based on the current sample data, face the camera side way and make sure your full body is in the frame.</string>
+
+    <!-- Strings for segmentation preference. -->
+    <string name="pref_title_segmentation_raw_size_mask" translatable="false">Enable raw size mask</string>
+    <string name="pref_key_segmentation_raw_size_mask" translatable="false">srsm</string>
+    <string name="_0">0</string>
+
+    <string name="app_name">智能运动测试系统</string>
+    <string name="welcome_str">欢迎您使用智能运动测试</string>
+    <string name="login_register">登录/注册</string>
+    <string name="sport_skill">运动技巧</string>
+    <string name="file_manager">文件管理</string>
+    <string name="data_process">数据处理</string>
+    <string name="sport_test">运动测试</string>
+    <string name="system_setting">系统设置</string>
+    <string name="after_sales_service">售后服务</string>
+    <string name="data_analyse">数据分析</string>
+    <string name="power_off">关机</string>
+    <string name="reboot">重启</string>
+    <string name="sleep">睡眠</string>
+    <string name="exit">退出</string>
+    <string name="clear_input">清空信息</string>
+    <string name="batch_input">批量录入</string>
+    <string name="start">开始</string>
+    <string name="save">保存</string>
+    <string name="error_correct">纠错</string>
+    <string name="setting">设置</string>
+    <string name="single_input">单行输入</string>
+    <string name="test_setting">测试设置</string>
+    <string name="device_wifi">设备无线</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="item_change">项目切换</string>
+    <string name="channels_select">信道选择</string>
+
+    <string name="temp_test">临时测试</string>
+    <string name="simulate_test">模拟测试</string>
+    <string name="allow_retest">重复测试</string>
+    <string name="increase_num">递增编号</string>
+    <string name="finger_verify">指纹验证</string>
+    <string name="auto_print">自动打印</string>
+    <string name="broadcast_voice">播报语音</string>
+    <string name="broadcast_score">播报成绩</string>
+    <string name="read_card_content">读卡内容</string>
+    <string name="read_id_card">身份证读取</string>
+    <string name="monitor_run">监控运行</string>
+    <string name="video_detection">视频检测</string>
+    <string name="face_identify">人脸识别</string>
+    <string name="camera_mark">相机标定</string>
+    <string name="data_auto_upload">数据自动上传</string>
+    <string name="ip_address">IP地址</string>
+    <string name="test_person_count">测试人数</string>
+    <string name="test_count">测试次数</string>
+    <string name="test_time">测试时间</string>
+    <string name="order_set">发令设置</string>
+    <string name="volume_setup">音量设置</string>
+    <string name="device_wifi_setting">设备无线配置</string>
+    <string name="device_status_select">设备状态+选择</string>
+    <string name="device_air_updating">设备空中升级</string>
+    <string name="goback_count">往返次数</string>
+    <string name="cmd_voice_setup">发令设置</string>
+    <string name="on_your_marks">各就位</string>
+    <string name="ready">预备</string>
+    <string name="on_your_marks_ready">各就位 预备</string>
+    <string name="check_update">检查更新</string>
+    <string name="update">更新</string>
+    <string name="fm_current_version">当前系统版本%s</string>
+    <string name="no_update">无更新</string>
+    <string name="check_has_update">检测到新版本</string>
+    <string name="please_input_num">请输入数字</string>
+    <string name="fm_channel">设备通道:%02d</string>
+    <string name="fm_connect_count">连接设备:%d</string>
+    <string name="msg_is_already_test">该人员已测试</string>
+    <string name="msg_not_allow_temp_test">不允许临时测试</string>
+    <string name="msg_is_input">已录入</string>
+    <string name="import_standard_score">导入评分标准</string>
+    <string name="import_list">导入名单</string>
+    <string name="delete_temp">删除临时</string>
+    <string name="import_head">导入头像</string>
+    <string name="delete_head">删除头像</string>
+
+    <string name="warn">警告</string>
+    <string name="sync_list">同步名单</string>
+    <string name="data_upload">数据上传</string>
+    <string name="correct_score">成绩纠错</string>
+    <string name="delete_score">删除成绩</string>
+    <string name="delete_list">删除名单</string>
+    <string name="save_score">保存成绩</string>
+    <string name="back_data">备份数据</string>
+    <string name="recovery_data">恢复数据</string>
+    <string name="export_list">导出名单</string>
+    <string name="export_data">导出数据</string>
+    <string name="import_scoring">导入评分标准</string>
+
+    <string name="msg_import_stand_score">将选中的评分标准导入数据库中</string>
+    <string name="msg_import_excel_list">将选中的评分标准导入数据库中</string>
+    <string name="msg_import_head">将选中的头像文件导入到系统中</string>
+    <string name="msg_is_exit_test">是否退出当前测试</string>
+    <string name="msg_test_not_end_save_score">测试未结束，是否保存成绩</string>
+    <string name="msg_cancel_test">是否取消当前测试</string>
+    <string name="warm">警告</string>
+    <string name="warm1">提示</string>
+    <string name="msg_del_all_list_in_db">将删除数据库中全部已导入的名单</string>
+    <string name="msg_del_all_head">将删除全部头像</string>
+    <string name="msg_input_admin_password">输入管理员密码</string>
+    <string name="msg_input_server_ip">输入服务器IP地址</string>
+    <string name="msg_sync_list_from_db">开始从服务器同步名单到本机数据库中</string>
+    <string name="all">全部</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="msg_save_score_success">全部</string>
+    <string name="data_query">数据查询</string>
+    <string name="query">查询</string>
+    <string name="test_item">测试项目</string>
+    <string name="school">学校</string>
+    <string name="_class">班级</string>
+    <string name="grade">年级</string>
+    <string name="upload">上传</string>
+    <string name="print">打印</string>
+    <string name="export">导出</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="student_code">学号</string>
+    <string name="card">卡号</string>
+    <string name="grade_id">年级编号</string>
+    <string name="class_id">班级编号</string>
+    <string name="score">成绩</string>
+    <string name="record_time">记录时间</string>
+    <string name="video_record">视频录像</string>
+    <string name="msg_upload_data_to_cloud">将本机数据库中所有数据上传至云平台服务器</string>
+    <string name="msg_speek_init_failed">语音初始化失败</string>
+    <string name="device">设备</string>
+    <string name="channel">信道</string>
+    <string name="channel2">信道:</string>
+    <string name="fm_channel2">信道:%d</string>
+    <string name="num">编号</string>
+    <string name="num2">编号:</string>
+    <string name="fm_num2">编号:%d</string>
+    <string name="power2">电量：</string>
+    <string name="fm_power">电量:%d%%</string>
+    <string name="device_match">设备匹配</string>
+    <string name="clear_data">清除数据</string>
+    <string name="query_power">查询电量</string>
+    <string name="quick_exit">快速退出</string>
+    <string name="current_connect_device">当前连接设备</string>
+    <string name="stop">停止</string>
+    <string name="title000">00:00.000</string>
+    <string name="msg_test_persion_empty">测试人员为空</string>
+    <string name="lookup">查看</string>
+    <string name="best_score">最好成绩</string>
+    <string name="localhost_data">本机数据</string>
+    <string name="fm_export_data">已导入人数\n%d人</string>
+    <string name="fm_export_temp">临时数据\n%d人</string>
+    <string name="fm_export_head">已导入头像\n%d张</string>
+    <string name="fm_storage_space">存储空间\n%s\n%s%</string>
+    <string name="password_cannt_empty">密码不能为空</string>
+    <string name="password_error">密码错误</string>
+    <string name="msg_delete_list_success">名单已删除</string>
+    <string name="msg_delete_success">删除成功</string>
+    <string name="fm_failed">失败:%s</string>
+    <string name="backup_success">备份成功</string>
+    <string name="fm_recovery_info">正在恢复文件,总大小:%s</string>
+    <string name="write_upan_error_insert_again">写入U盘错误，请拔出再重新插入再试</string>
+    <string name="copy_finish">复制完成</string>
+    <string name="copy_failed">复制失败:</string>
+    <string name="msg_sync_list">开始从服务器同步名单到本机数据库中</string>
+    <string name="msg_data_upload">将本机数据库中所有数据上传至云平台服务器</string>
+    <string name="msg_cancel_current_test">是否取消当前测试</string>
+    <string name="cancel_test_success">已取消测试</string>
+    <string name="msg_delete_temp_data">将删除数据库中全部临时数据</string>
+    <string name="msg_delete_all_score">将删除数据库中全部成绩</string>
+    <string name="msg_function_undev">此功能未开发</string>
+    <string name="msg_delete_list">将删除数据库中所有名单</string>
+    <string name="msg_device_not_connect">设备未连接</string>
+    <string name="msg_device_not_connect1">设备不足</string>
+    <string name="msg_out_connect_count">起过设备连接数</string>
+    <string name="msg_has_input">该人员已录入</string>
+    <string name="msg_project_not_dev">项目未开发</string>
+    <string name="msg_is_testing">正在测试中</string>
+    <string name="msg_test_finish_for_save">测试完成，请保存成绩</string>
+    <string name="msg_test_finish">测试完成</string>
+    <string name="msg_welcome_user_smart_system">欢迎使用智能运动测试系统</string>
+    <string name="type">分类</string>
+    <string name="phone">电话</string>
+    <string name="qq">QQ</string>
+    <string name="weixin">微信</string>
+    <string name="mail">邮箱</string>
+    <string name="info">info</string>
+    <string name="record">Record</string>
+    <string name="intro_message">
+        <![CDATA[
+            This sample demonstrates how to record video using Camera2 API.
+        ]]>
+    </string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="open_cammera_error">开启相机失败</string>
+    <string name="import_salese_list">导入售后人员名单</string>
+    <string name="msg_import_salese_list">是否导入售后人员名单？</string>
+    <string name="msg_modify_sales_info">修改销售人员信息</string>
+    <string name="msg_name_cant_empty">名字不能为空</string>
+    <string name="msg_phone_cant_empty">电话不能为空</string>
+    <string name="btn_clear_input">是否清空信息?</string>
+    <string name="msg_test_not_end_save_score1">确认是否保存</string>
+    <string name="tixing">提示</string>
+    <string name="test_nan">男生圈数</string>
+    <string name="test_nv">女生圈数</string>
+    <string name="testIgnore_time">忽略时间</string>
+
+
+    <string-array name="export_score_titles">
+        <item>姓名</item>
+        <item>性别</item>
+        <item>学籍号</item>
+        <item>卡号</item>
+        <item>学校</item>
+        <item>年级编号</item>
+        <item>班级编号</item>
+        <item>$projectName</item>
+        <item>记录时间</item>
+    </string-array>
+
+</resources>

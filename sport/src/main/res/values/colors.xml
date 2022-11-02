@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#7C4DFF</color>
+
+    <color name="blue_grey_400">#78909C</color>
+    <color name="light_grey_400">#E6E6E6</color>
+    <color name="light_green_700">#689F38</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#4286f4</color>
+    <color name="red">#f44242</color>
+
+    <color name="color_main">#005467</color>
+    <color name="color_set_button_light">#63A5B4</color>
+    <color name="color_set_button_dark">#006278</color>
+    <color name="color_main_red_light">#EC4678</color>
+    <color name="color_main_red_dark">#EF6C50</color>
+    <color name="color_main_blue_light">#00D4E0</color>
+    <color name="color_main_blue_dark">#33BAF4</color>
+    <color name="color_main_yellow_light">#E6CE38</color>
+    <color name="color_main_yellow_dark">#FCA500</color>
+    <color name="color_main_green">#00D420</color>
+    <color name="color_main_purple">#8E4DF3</color>
+    <color name="color_power_button">#20FFFFFF</color>
+    <color name="color_power_button_press">#60FFFFFF</color>
+    <color name="color_back_test">#FCFCFC</color>
+    <color name="color_main_blue">#006278</color>
+    <color name="color_test_bg">#FCFCFC</color>
+    <color name="color_test_corner_bg">#BDBDBD</color>
+    <color name="color_test_split">#02728B</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_C8C8C8">#C8C8C8</color>
+    <color name="color_006278">#006278</color>
+    <color name="color_7FB4C0">#7FB4C0</color>
+    <color name="color_F1F1F1">#F1F1F1</color>
+    <color name="color_setting_item_border">#C8C8C8</color>
+    <color name="color_gray">#444444</color>
+    <color name="color_setting_test_item_press">#0390AF</color>
+    <color name="warn_color">#DB0000</color>
+    <color name="color_024554">#024554</color>
+    <color name="color_80A9B3">#80A9B3</color>
+    <color name="color_power_green">#B7F800</color>
+    <color name="battery_back">#D6DFE7</color>
+    <color name="battery_full">#B7F800</color>
+    <color name="battery_lower">#D8001A</color>
+    <color name="transparent_gray">#BBC8C8C8</color>
+    <color name="transparent_white">#BBFCFCFC</color>
+
+</resources>

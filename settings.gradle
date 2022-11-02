@@ -1,0 +1,3 @@
+include ':sport'
+include ':app'
+rootProject.name = "sport-master"

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.kyhero.sport.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart0"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintStart_toStartOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintTop_toBottomOf="@+id/multi_line_Gl_chart0"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintStart_toStartOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintTop_toBottomOf="@+id/multi_line_Gl_chart1"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintStart_toStartOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintTop_toBottomOf="@+id/multi_line_Gl_chart2"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintStart_toStartOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintTop_toBottomOf="@+id/multi_line_Gl_chart3"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multi_line_Gl_chart5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintStart_toStartOf="@+id/multi_line_Gl_chart0"
+        app:layout_constraintTop_toBottomOf="@+id/multi_line_Gl_chart4"
+        tools:ignore="MissingConstraints" />
+
+<!--    <com.kyhero.sport.GraphicOverlay-->
+<!--        android:id="@+id/graphic_overlay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/mat_view_r"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/mat"
+        android:orientation="horizontal"
+        android:rotation="20"
+        android:rotationX="30"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/mat_view_l"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/mat"
+        android:orientation="horizontal"
+        android:rotation="-20"
+        android:rotationX="30"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/pullup_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pullup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/hair_dv_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kyhero.sport.communal.DragScaleView
+            android:id="@+id/hair_dv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_dashgap"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            tools:ignore="MissingClass" />
+    </RelativeLayout>
+
+    <ToggleButton
+        android:id="@+id/facing_switch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/btn_bcam"
+        android:checked="false"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+<!--    <com.kyhero.sport.GraphicOverlay-->
+<!--        android:id="@+id/graphic_overlay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,12 +16,12 @@ android {
         setProperty("archivesBaseName", "sport")
     }
 
-    android.libraryVariants.all { variant ->
-        variant.outputs.all {
-            def fileName = "sport.aar"
-            outputFileName = fileName
-        }
-    }
+//    android.libraryVariants.all { variant ->
+//        variant.outputs.all {
+//            def fileName = "sport.aar"
+//            outputFileName = fileName
+//        }
+//    }
 
     buildTypes {
         release {
@@ -30,7 +30,7 @@ android {
         }
         proguard {
             debuggable false
-             minifyEnabled true//混淆
+           minifyEnabled true//混淆
             zipAlignEnabled true//Zipalign优化
 //            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'proguard.cfg'
@@ -46,6 +46,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
